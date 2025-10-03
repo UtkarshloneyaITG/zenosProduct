@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 function About() {
   return (
@@ -10,10 +11,18 @@ function About() {
         together. ✨
       </p>
       <div className="card-container">
-        <div className="card">👩‍💻 Developer 1 - Frontend</div>
-        <div className="card">👨‍💻 Developer 2 - Backend</div>
-        <div className="card">🧑‍🎨 Developer 3 - Designer</div>
-        <div className="card">🧑‍🔧 Developer 4 - DevOps</div>
+        <Link to="frontend" className="card">
+          👩‍💻 Developer 1 - Frontend
+        </Link>
+        <Link to="backend" className="card">
+          🧑‍🎨 Developer 3 - Designer
+        </Link>
+        <Link to="designer" className="card">
+          👨‍💻 Developer 2 - Backend
+        </Link>
+        <Link to="devops" className="card">
+          🧑‍🔧 Developer 4 - DevOps
+        </Link>
       </div>
     </section>
   );

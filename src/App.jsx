@@ -7,6 +7,7 @@ import Contact from "./conponents/contact_us/contact_us";
 import PageNotFound from "./conponents/pageNotFound/PageNotFound";
 import Product from "./conponents/product/product";
 import P_details from "./conponents/product/P_details";
+import Developer from "./conponents/developers/developer";
 function App() {
   return (
     <>
@@ -16,6 +17,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/product" element={<Product />} />
+        <Route path="/about/:developer" element={<Developer />} />
         <Route path="/product/:id" element={<P_details />} />
         <Route path="*" element={<PageNotFound />} />
 

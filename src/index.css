@@ -1,4 +1,6 @@
-/* Reset + Fonts */
+/* ========================================
+   RESET + FONTS
+======================================== */
 * {
   margin: 0;
   padding: 0;
@@ -11,9 +13,12 @@ body {
   background: linear-gradient(135deg, #141e30, #243b55);
   color: white;
   min-height: 100vh;
+  line-height: 1.6;
 }
 
-/* Navbar */
+/* ========================================
+   NAVBAR
+======================================== */
 header {
   background: rgba(0, 0, 0, 0.6);
   padding: 1rem 2rem;
@@ -41,7 +46,6 @@ nav {
 }
 
 .nav-links a {
-  text-decoration: none;
   color: white;
   transition: 0.3s ease;
 }
@@ -51,15 +55,22 @@ nav {
   color: #00c9ff;
 }
 
-/* Hero Section */
+/* ========================================
+   HERO
+======================================== */
 .hero {
   text-align: center;
   margin-top: 10%;
+  padding: 2rem;
 }
 
 .hero h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+}
+
+.hero h2 span {
+  color: #00c9ff;
 }
 
 .hero p {
@@ -84,7 +95,9 @@ nav {
   transform: scale(1.1);
 }
 
-/* Content Section */
+/* ========================================
+   CONTENT SECTIONS
+======================================== */
 .content {
   padding: 4rem 2rem;
   text-align: center;
@@ -100,7 +113,7 @@ nav {
   margin-bottom: 2rem;
 }
 
-/* About Cards */
+/* ABOUT CARDS */
 .card-container {
   display: flex;
   justify-content: center;
@@ -113,6 +126,7 @@ nav {
   padding: 1.5rem;
   border-radius: 15px;
   width: 200px;
+  color: white;
   transition: transform 0.3s ease, background 0.3s;
 }
 
@@ -121,7 +135,76 @@ nav {
   transform: translateY(-10px);
 }
 
-/* Contact Form */
+/* SKILLS */
+.skills {
+  background: #0d1b2a;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.skill-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-5px);
+}
+
+/* PROJECTS */
+.projects {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-card img {
+  width: 100%;
+  display: block;
+}
+
+.project-card h3 {
+  margin: 1rem 0 0.5rem;
+  color: #00c9ff;
+}
+
+/* ========================================
+   CONTACT FORM
+======================================== */
+.contact {
+  text-align: center;
+  background: #0d1b2a;
+  padding: 4rem 2rem;
+}
+
 .contact-form {
   max-width: 400px;
   margin: auto;
@@ -147,7 +230,9 @@ nav {
   align-self: center;
 }
 
-/* Animations */
+/* ========================================
+   ANIMATIONS
+======================================== */
 .fade-in {
   opacity: 0;
   animation: fadeIn 1.5s forwards;
@@ -165,7 +250,9 @@ nav {
   }
 }
 
-/* Footer */
+/* ========================================
+   FOOTER
+======================================== */
 footer {
   margin-top: 3rem;
   background: #0d1b2a;
@@ -194,7 +281,6 @@ footer {
 
 .footer-col ul {
   list-style: none;
-  padding: 0;
 }
 
 .footer-col ul li {
@@ -203,7 +289,6 @@ footer {
 
 .footer-col ul li a {
   color: #ccc;
-  text-decoration: none;
   transition: color 0.3s;
 }
 
@@ -214,10 +299,6 @@ footer {
 .footer-col .socials {
   display: flex;
   gap: 1rem;
-}
-
-.error-page a {
-  color: white;
 }
 
 .footer-col .socials a {
@@ -231,7 +312,6 @@ footer {
   transform: scale(1.2) rotate(8deg);
 }
 
-/* Bottom strip */
 .footer-bottom {
   text-align: center;
   margin-top: 2rem;
@@ -241,7 +321,9 @@ footer {
   color: #999;
 }
 
-/* 404 Page */
+/* ========================================
+   404 PAGE
+======================================== */
 .error-page {
   text-align: center;
   padding: 6rem 2rem;
@@ -266,6 +348,10 @@ footer {
   font-size: 1.1rem;
 }
 
+.error-page a {
+  color: white;
+}
+
 @keyframes float {
 
   0%,
@@ -278,7 +364,9 @@ footer {
   }
 }
 
-/* Product Grid */
+/* ========================================
+   PRODUCT GRID
+======================================== */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -317,7 +405,9 @@ footer {
   margin-bottom: 1rem;
 }
 
-/* Product Detail Page */
+/* ========================================
+   PRODUCT DETAIL
+======================================== */
 .product-detail {
   max-width: 1100px;
   margin: 4rem auto;
@@ -352,13 +442,15 @@ footer {
   color: #ccc;
 }
 
+/* ========================================
+   LOADER
+======================================== */
 .loader {
   width: 48px;
   height: 48px;
   border: 5px solid #FFF;
   border-radius: 50%;
   display: inline-block;
-  box-sizing: border-box;
   position: relative;
   animation: pulse 1s linear infinite;
 }
@@ -370,8 +462,6 @@ footer {
   height: 48px;
   border: 5px solid #FFF;
   border-radius: 50%;
-  display: inline-block;
-  box-sizing: border-box;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -400,4 +490,57 @@ footer {
   80% {
     transform: scale(1.2)
   }
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 4rem 2rem;
+}
+
+.about-img img {
+  width: 280px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.about-text {
+  flex: 1;
+  color: #ddd;
+}
+
+.about-text h2 {
+  font-size: 2.2rem;
+  color: #00c9ff;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.highlight {
+  color: #00c9ff;
+  font-weight: bold;
+}
+
+.about-stats {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.about-stats div {
+  text-align: center;
+}
+
+.about-stats h3 {
+  font-size: 1.8rem;
+  color: #00c9ff;
 }
